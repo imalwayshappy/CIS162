@@ -1,0 +1,34 @@
+body {
+  background-color: #f2f2f2;
+  font-family: serif, cursive, Verdana, Segoe, sans-serif;
+  width: auto;
+}
+
+header {
+  background-color: #b3b3b3;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
+  font-size: 30;
+}
+
+nav>ul {
+  line-height: 1.5em;
+  list-style-type: none;
+  padding-left: 7px;
+  background-color:#ff7d66;
+}
+
+section {
+  background-color: #ff7d66;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #b3b3b3;
+}
