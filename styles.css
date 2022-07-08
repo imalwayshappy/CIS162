@@ -1,11 +1,24 @@
+/* Create two equal columns that floats next to each other */
+/*
+* {
+  border-sizing: border-box;
+}
+*/
 body {
-  background-color: #f2f2f2;
-  font-family: serif, cursive, Verdana, Segoe, sans-serif;
-  width: auto;
+  background-color: #92a8d1;
+  font-family: serif, Verdana, sans-serif;
+  /*i removed with set to auto from here*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  max-width: 960px;
+  min-width: 640px;
 }
 
+/* Style Headers*/
 header {
-  background-color: #b3b3b3;
+  background-color:#034f84;
+  margin: 90px 0 0 0;
 }
 
 h1 {
@@ -14,21 +27,102 @@ h1 {
 
 h2 {
   color: black;
-  font-size: 30;
+  font-size: 30px;
+  background-color:#034f84;
 }
 
 nav>ul {
-  line-height: 1.5em;
   list-style-type: none;
-  padding-left: 7px;
-  background-color:#ff7d66;
+  line-height: 1.2em;
+  padding-left: 8px;
+  background-color: #ff7d66;
+  margin: 0;
 }
 
+/* Horizontal Navigation Styles */
+li {
+  float: left;
+  padding-left: 5%;
+  display: block;
+}
+
+/*Anchor Tags*/
+li a {
+  display: block;
+  padding: 14px 16px;
+  background-color: #dddddd;
+  text-align: center;
+}
+
+/*Hover over anchor tag*/
+li a:hover {
+  background-color:#ddd;
+  color: black;
+}
+
+/*Section tags*/
 section {
-  background-color: #ff7d66;
+  background-color: #f7786b;
   font-size: 1.2em;
 }
 
+/* footer tags*/
 footer {
-  background-color: #b3b3b3;
+  background-color: #034f84;
+  clear: left;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  color: #dddddd;
+}
+
+img {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.numberedlist {
+  display: list-item;
+}
+
+/*Column divisions*/
+#leftcolumn {
+  clear: left;
+  float: left;
+  width: 50%;
+}
+
+#rightcolumn {
+  float: right;
+  clear: right;
+  width: 50%;
+  text-align: left;
+  background-color:#f7cac9;
+}
+
+/* Clear floats after the columns */
+.full:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lastwords {
+  margin-left: 6px;
+}
+.rightcolumncolor{
+  background-color: #f7cac9;
+}
+
+.bottomfootercolor {
+  color: #dddddd;
+}
+
+.leftheadercolor {
+  color:#dddddd;
+}
+
+.headercolor {
+  color: #dddddd;
 }
